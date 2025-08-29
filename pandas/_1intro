@@ -1,0 +1,11 @@
+Pandas is a Python library used for data analysis and data manipulation.
+
+It provides data structures like:
+
+1.Series → a one-dimensional labeled array (like a column in Excel).
+
+2.DataFrame → a two-dimensional labeled data structure (like an Excel sheet or SQL table).
+
+Pandas is widely used in data science, machine learning, and analytics because it makes handling tabular 
+
+data very easy.
