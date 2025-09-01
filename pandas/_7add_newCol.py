@@ -40,6 +40,17 @@ print(df)
 df["Marks_plus_5"] = df["Marks"] + 5
 print(df)
 
+#####################
+import pandas as pd
+
+df = pd.DataFrame({'Name': ['Alice', 'Bob', 'Charlie'],
+                   'Score': [85, 90, 78]})
+
+# Using apply with a lambda function
+df["Score"] = df["Score"].apply(lambda x: x + 5)
+print(df)
+
+
 
 # Output
 

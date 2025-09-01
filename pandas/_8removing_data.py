@@ -28,3 +28,19 @@ print(df)
 # 2  Charlie   35     95
 
 # After dropping, you usually reassign back to df (since drop() by default returns a new DataFrame without changing the original unless inplace=True)
+
+
+
+
+# To drop rows where Age is missing (NaN), you should use:
+
+
+import pandas as pd
+import numpy as np
+
+data = {'Name': ['Alice', 'Bob', 'Charlie'], 'Age': [24, np.nan, 28], 'City': ['NY', 'LA', 'SF']}
+df = pd.DataFrame(data)
+
+# Drop rows where Age is missing
+df = df.dropna(subset=["Age"])
+print(df)
